@@ -1,0 +1,14 @@
+# Archived projects and temporary build tools are not website source.
+/.removed-projects/
+/citilinkers/
+/globaljet-homepage/
+/globaljet-homepage.zip
+
+# Local dependencies, secrets, and operating-system files.
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

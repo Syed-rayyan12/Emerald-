@@ -1,0 +1,1 @@
+window.grecaptcha={ready:function(callback){callback()},execute:function(){return Promise.resolve('local-preview')},render:function(){return 0},getResponse:function(){return ''},reset:function(){}};
