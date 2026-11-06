@@ -38,18 +38,21 @@ html.preloader-removed .header__logo-container {
 }
 
 .hero__brand-logo {
-  position: relative;
+  position: absolute;
+  top: 67%;
+  left: 28%;
   z-index: 3;
   display: block;
-  width: clamp(9rem, 17vw, 12rem);
+  width: clamp(7rem, 10vw, 9rem);
   height: auto;
-  margin: 0 auto 0.9rem;
+  margin: 0;
   opacity: 0.88;
   object-fit: contain;
   filter: brightness(0) saturate(100%) invert(76%) sepia(93%) saturate(2476%) hue-rotate(63deg) brightness(105%) contrast(105%);
   background: transparent !important;
   box-shadow: none !important;
   pointer-events: none;
+  transform: translate(-50%, -50%);
 }
 
 .hero__circle,
@@ -80,8 +83,8 @@ html.preloader-removed .header__logo-container {
   }
 
   .hero__brand-logo {
-    width: 7.5rem;
-    margin-bottom: 0.65rem;
+    left: 28%;
+    width: 6.5rem;
   }
 
   .hero__sound {
