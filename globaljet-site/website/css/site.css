@@ -28,6 +28,16 @@
   }
 }
 
+.hero__brand-logo {
+  display: block;
+  width: clamp(7rem, 14vw, 10rem);
+  height: auto;
+  margin: 0 auto 1.25rem;
+  object-fit: contain;
+  background: transparent;
+  pointer-events: none;
+}
+
 .hero__sound {
   display: flex !important;
   right: auto !important;
@@ -45,6 +55,11 @@
 
   .header__logo {
     height: 2.75rem;
+  }
+
+  .hero__brand-logo {
+    width: 7rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero__sound {
