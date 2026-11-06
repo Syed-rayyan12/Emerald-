@@ -43,8 +43,17 @@ html.preloader-removed .header__logo-container {
   height: auto;
   margin: 0 auto 1.25rem;
   object-fit: contain;
-  background: transparent;
+  background: transparent !important;
+  box-shadow: none !important;
   pointer-events: none;
+}
+
+.hero__circle,
+.hero__circle .circle__svg-container,
+.hero__circle .circle__slide,
+.hero__circle .circle__list-container,
+.hero__circle .circle__title {
+  background-color: transparent !important;
 }
 
 .hero__sound {
