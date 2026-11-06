@@ -1,2 +1,74 @@
 @import url("../assets/reference/globaljet.aero/sites/default/files/css/css_zHM1nhF63SvkC1aKlDRWPR4Pg_DbcxtPZYUKOMGrcXM.css");
 @import url("../assets/reference/globaljet.aero/sites/default/files/css/css_v7ENGSWewUVCdiXmXXrNXrnABvUY-miStLedLMXYPKo.css");
+
+/* Emerald Chauffeurs hero and header placement */
+.header__logo-container {
+  position: absolute;
+  top: 50%;
+  left: clamp(1rem, 2vw, 2rem);
+  z-index: 9;
+  grid-column: auto;
+  grid-row: auto;
+  min-width: 0;
+  padding-top: 0;
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+.header__logo {
+  display: block;
+  width: auto;
+  height: clamp(2.75rem, 4vw, 3.5rem);
+}
+
+@media (min-width: 64em) {
+  .header > .header__menu-container:first-child {
+    grid-column: 1 / 3;
+    padding-left: 10rem;
+  }
+}
+
+.hero__brand-logo {
+  display: block;
+  width: clamp(7rem, 14vw, 10rem);
+  height: auto;
+  margin: 0 auto 1.25rem;
+  object-fit: contain;
+  background: transparent;
+  pointer-events: none;
+}
+
+.hero__sound {
+  display: flex !important;
+  right: auto !important;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 7;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 39.99875em) {
+  .header__logo-container {
+    left: 0.75rem;
+  }
+
+  .header__logo {
+    height: 2.75rem;
+  }
+
+  .hero__brand-logo {
+    width: 7rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero__sound {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .hero__sound-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
