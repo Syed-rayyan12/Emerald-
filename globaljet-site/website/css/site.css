@@ -136,6 +136,90 @@ html.preloader-removed .header__logo-container {
   outline-offset: -2px;
 }
 
+.hero__quote-dock .styled-select__control {
+  min-height: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0.6rem !important;
+  background: rgba(24, 27, 31, 0.94) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.hero__quote-dock .styled-select__control:hover {
+  border-color: rgba(255, 255, 255, 0.38) !important;
+}
+
+.hero__quote-dock .styled-select__control--is-focused {
+  border-color: rgba(57, 255, 20, 0.68) !important;
+  box-shadow: 0 0 0 3px rgba(57, 255, 20, 0.14) !important;
+}
+
+.hero__quote-dock .styled-select__menu {
+  z-index: 30 !important;
+  margin-top: 0.45rem !important;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 0.75rem !important;
+  background: rgba(20, 22, 26, 0.98) !important;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.48) !important;
+  backdrop-filter: blur(16px);
+}
+
+.hero__quote-dock .styled-select__menu-list {
+  max-height: 18rem;
+  padding: 0.35rem;
+}
+
+.hero__quote-dock .styled-select__option {
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.45rem;
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.82) !important;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.hero__quote-dock .styled-select__option--is-focused {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+}
+
+.hero__quote-dock .styled-select__option--is-selected {
+  background: rgba(57, 255, 20, 0.13) !important;
+  color: #39ff14 !important;
+}
+
+.hero__quote-dock .styled-select__placeholder {
+  color: rgba(255, 255, 255, 0.56) !important;
+  text-transform: uppercase;
+}
+
+.hero__quote-dock .styled-select__single-value,
+.hero__quote-dock .styled-select__input-container {
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+.hero__quote-dock .styled-select__indicator {
+  color: rgba(255, 255, 255, 0.58) !important;
+  transition: color 0.15s ease;
+}
+
+.hero__quote-dock .styled-select__indicator:hover {
+  color: #39ff14 !important;
+}
+
+.hero__quote-dock .styled-select__indicator-separator {
+  display: none;
+}
+
+.hero__quote-dock .styled-select__no-options-message,
+.hero__quote-dock .styled-select__loading-message {
+  color: rgba(255, 255, 255, 0.58) !important;
+  text-transform: uppercase;
+}
+
 @media (max-width: 39.99875em) {
   .header__logo-container {
     left: 0.75rem;
