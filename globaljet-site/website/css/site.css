@@ -68,10 +68,22 @@ html.preloader-removed .header__logo-container {
   position: absolute !important;
   right: auto !important;
   bottom: 2rem;
-  left: 2rem;
+  left: 10.2vw;
   z-index: 7;
   width: auto !important;
   margin: 0 !important;
+}
+
+@media (min-width: 90rem) {
+  .hero__sound {
+    left: calc((100vw - 90rem) / 2 + 9.1875rem);
+  }
+}
+
+@media (max-width: 63.99875em) {
+  .hero__sound {
+    left: 1rem;
+  }
 }
 
 .footer__button--mini {
@@ -79,6 +91,49 @@ html.preloader-removed .header__logo-container {
   right: clamp(1rem, 2vw, 2rem) !important;
   bottom: 1.5rem !important;
   left: auto !important;
+}
+
+/* Booking form labels and dropdown use the same uppercase, quiet shadcn-style treatment. */
+.hero__quote-dock .ticket__label,
+.hero__quote-dock .ticket__input,
+.hero__quote-dock .ticket__input::placeholder,
+.hero__quote-dock .ticket__input--placeholder,
+.hero__quote-dock .toggles__link,
+.hero__quote-dock .drop-down,
+.hero__quote-dock .drop-down button,
+.hero__quote-dock .drop-down__fleet-item-title,
+.hero__quote-dock .drop-down__fleet-item-info {
+  text-transform: uppercase !important;
+}
+
+.hero__quote-dock .drop-down.ticket__drop-down {
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 0.75rem;
+  background: rgba(23, 25, 29, 0.97) !important;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(16px);
+  padding: 1rem;
+}
+
+.hero__quote-dock .drop-down__label {
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.55rem;
+  transition: background-color 0.18s ease;
+}
+
+.hero__quote-dock .drop-down__label:hover,
+.hero__quote-dock .drop-down__label:focus-within {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.hero__quote-dock .drop-down__fake-checkbox {
+  border-radius: 0.25rem;
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+.hero__quote-dock .ticket__label--aircraft2:focus-within {
+  outline: 2px solid rgba(255, 255, 255, 0.24);
+  outline-offset: -2px;
 }
 
 @media (max-width: 39.99875em) {
