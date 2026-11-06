@@ -38,11 +38,13 @@ html.preloader-removed .header__logo-container {
 }
 
 .hero__brand-logo {
+  position: relative;
+  z-index: 3;
   display: block;
-  width: clamp(7rem, 14vw, 10rem);
+  width: clamp(9rem, 17vw, 12rem);
   height: auto;
-  margin: 0 auto 1.25rem;
-  opacity: 0.58;
+  margin: 0 auto 0.9rem;
+  opacity: 0.88;
   object-fit: contain;
   filter: brightness(0) saturate(100%) invert(76%) sepia(93%) saturate(2476%) hue-rotate(63deg) brightness(105%) contrast(105%);
   background: transparent !important;
@@ -78,8 +80,8 @@ html.preloader-removed .header__logo-container {
   }
 
   .hero__brand-logo {
-    width: 7rem;
-    margin-bottom: 0.75rem;
+    width: 7.5rem;
+    margin-bottom: 0.65rem;
   }
 
   .hero__sound {
