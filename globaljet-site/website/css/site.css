@@ -44,6 +44,7 @@ html.preloader-removed .header__logo-container {
   margin: 0 auto 1.25rem;
   opacity: 0.58;
   object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(76%) sepia(93%) saturate(2476%) hue-rotate(63deg) brightness(105%) contrast(105%);
   background: transparent !important;
   box-shadow: none !important;
   pointer-events: none;
