@@ -65,12 +65,20 @@ html.preloader-removed .header__logo-container {
 
 .hero__sound {
   display: flex !important;
+  position: absolute !important;
   right: auto !important;
   bottom: 2rem;
   left: 2rem;
   z-index: 7;
   width: auto !important;
   margin: 0 !important;
+}
+
+.footer__button--mini {
+  top: auto !important;
+  right: clamp(1rem, 2vw, 2rem) !important;
+  bottom: 1.5rem !important;
+  left: auto !important;
 }
 
 @media (max-width: 39.99875em) {
@@ -90,6 +98,11 @@ html.preloader-removed .header__logo-container {
   .hero__sound {
     bottom: 1rem;
     left: 1rem;
+  }
+
+  .footer__button--mini {
+    right: 1rem !important;
+    bottom: 1rem !important;
   }
 
   .hero__sound-icon {
